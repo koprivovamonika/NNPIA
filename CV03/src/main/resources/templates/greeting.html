@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html">
+    <title>Greeting started</title>
+</head>
+<body>
+    <p th:text ="'Hello ' +${user.getUsername()} +' your password is: '+${user.getPassword()} + '!'"/>
+    <p th:text ="'Counter ' +${counter} + '!'"/>
+</body>
+</html>
