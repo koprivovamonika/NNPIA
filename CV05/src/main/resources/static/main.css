@@ -1,0 +1,111 @@
+h2 {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+body{
+    margin-top: 60px;
+}
+
+strong {
+    font-weight: 700;
+    background-color: yellow;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.productName{
+    color: darkgoldenrod;
+}
+
+.productList{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product{
+    min-width: 200px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid grey;
+}
+
+.addToCartButton{
+    padding: 10px;
+    background-color: chocolate;
+    display: block;
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    float: left;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: chocolate;
+}
+nav{
+    margin-bottom: 10px;
+}
+
+.footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    background: chocolate;
+    color: white;
+}
+
+input[type=text]{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: chocolate;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: darkorange;
+}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: htmlhead"></head>
+<body>
+<h2>Product Detail</h2>
+<div th:replace="fragments/navigation :: navbar"></div>
+<section>
+
+    <h3 th:text="${product.getProductName()}"></h3>
+
+</section>
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>

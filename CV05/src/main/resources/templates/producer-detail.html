@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: htmlhead"></head>
+<body>
+<h2>Producer Detail</h2>
+<div th:replace="fragments/navigation :: navbar"></div>
+<section>
+    <h3 th:text="${producer.getName()}"></h3>
+    <h4 th:text="${producer.getEmail()}"></h4>
+    <h4 th:text="${producer.getPhone()}"></h4>
+</section>
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>

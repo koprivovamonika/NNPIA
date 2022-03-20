@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: htmlhead"></head>
+<body>
+<h2>Add Product</h2>
+<div th:replace="fragments/navigation :: navbar"></div>
+<section>
+    <form action="#" th:action="@{/product-form-process}" th:object="${product}" method="post">
+        <input type="hidden" th:field="*{id}" />
+        <input placeholder="Product name" type="text" th:field="*{productName}" />
+        <input type="submit"/>
+    </form>
+</section>
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>

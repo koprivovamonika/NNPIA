@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: htmlhead"></head>
+<body>
+<div th:replace="fragments/navigation :: navbar"></div>
+<h2>Producer List</h2>
+<section class="productList">
+
+    <div class="product" th:each="producer: ${producerList}">
+        <a th:href="@{/producer-detail/{id} (id = ${producer.getId()})}">
+            <h3 class="productName" th:text="${producer.getName()}"></h3>
+        </a>
+        <a class="addToCartButton" th:href="@{'/producer-form/' + ${producer.getId()}}">EDIT</a>
+        <a class="addToCartButton" th:href="@{'/producer-remove/' + ${producer.getId()}}">REMOVE</a>
+    </div>
+
+</section>
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>
