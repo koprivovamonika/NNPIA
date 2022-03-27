@@ -111,10 +111,6 @@ class NnpiaCv06ApplicationTests {
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.BAD_REQUEST);
     }
 
-    //TODO ošetření vhodných hodnot např. min a max, délka uživatelského jména a hesla, slozeni hesla apod
-    //Min, Max, Pattern
-    //Délka jmena a hesla uvažuje s minimen v DB
-    //beanvalidation.org
     private User createUser() {
         User user = new User();
         user.setUserName("test-user");
